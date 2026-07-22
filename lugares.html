@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<title>Escolha o lugar ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#e6e6fa,#ff69b4);
+    font-family:Arial,sans-serif;
+}
+
+/* Corações */
+
+.heart{
+    position:fixed;
+    font-size:180px;
+    opacity:0.25;
+    animation:pulsar 2s infinite;
+}
+
+.canto1{
+    top:-40px;
+    left:-40px;
+}
+
+.canto2{
+    top:-40px;
+    right:-40px;
+}
+
+.canto3{
+    bottom:-40px;
+    left:-40px;
+}
+
+.canto4{
+    bottom:-40px;
+    right:-40px;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    
+    justify-content:flex-start;
+    align-items:center;
+    padding:40px 20px;
+    box-sizing:border-box;
+}
+
+p{
+    color:#8b008b;
+    font-size:28px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.opcoes{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    width:320px;
+}
+
+button{
+    width:140px;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    background:#ff69b4;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+@keyframes pulsar{
+    50%{
+        transform:scale(1.10);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="heart canto1">❤️</div>
+<div class="heart canto2">❤️</div>
+<div class="heart canto3">❤️</div>
+<div class="heart canto4">❤️</div>
+
+<div class="container">
+
+<p>Onde você gostaria de ir mb? 🥰</p>
+
+<div class="opcoes">
+
+<button onclick="localStorage.setItem('local','Restaurante 🍕'); window.location.href='restaurante.html'">
+🍕 Restaurante
+</button>
+
+<button onclick="localStorage.setItem('local','Cinema 🎬'); window.location.href='cinema.html'">
+🎬 Cinema
+</button>
+
+<button onclick="localStorage.setItem('local','Shopping 🛍️'); window.location.href='shopping.html'">
+🛍️ Shopping
+</button>
+
+<button onclick="localStorage.setItem('local','Parque de Diversão 🎡'); window.location.href='parque.html'">
+🎡 Parque de Diversão
+</button>
+
+<button onclick="localStorage.setItem('local','Ipiranga 🌳'); window.location.href='ipiranga.html'">
+🌳 Ipiranga
+</button>
+
+<button onclick="localStorage.setItem('local','Casa 🏠'); window.location.href='casa.html'">
+🏠 Casa
+</button>
+
+</div>
+
+</div>
+
+<script src="efeitos.js"></script>
+
+</body>
+
+</html>

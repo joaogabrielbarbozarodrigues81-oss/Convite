@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Parque Ipiranga 🌳</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e6e6fa,#ff69b4);
+    font-family:Arial,sans-serif;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.heart{
+    position:fixed;
+    font-size:140px;
+    opacity:0.25;
+    animation:pulsar 2s infinite;
+}
+
+.canto1{top:-40px;left:-40px;}
+.canto2{top:-40px;right:-40px;}
+.canto3{bottom:-40px;left:-40px;}
+.canto4{bottom:-40px;right:-40px;}
+
+.container{
+    width:100%;
+    max-width:450px;
+    margin:0 auto;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+h1{
+    color:#ff1493;
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+button{
+    display:block;
+    width:240px;
+    margin:8px auto;
+    padding:8px;
+    border:none;
+    border-radius:20px;
+    background:#ff69b4;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+@keyframes pulsar{
+50%{
+transform:scale(1.1);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="heart canto1">❤️</div>
+<div class="heart canto2">❤️</div>
+<div class="heart canto3">❤️</div>
+<div class="heart canto4">❤️</div>
+
+<div class="container">
+
+<h1>O que você gostaria de fazer no Parque Ipiranga? 🌳</h1>
+
+<button onclick="localStorage.setItem('local','Parque Ipiranga 🌳');window.location.href='data_horario.html'">
+🚶 Caminhar juntos
+</button>
+
+<button onclick="localStorage.setItem('local','Parque Ipiranga 🌳');window.location.href='data_horario.html'">
+🧺 Fazer um piquenique
+</button>
+
+<button onclick="localStorage.setItem('local','Parque Ipiranga 🌳');window.location.href='data_horario.html'">
+📸 Tirar fotos
+</button>
+
+<button onclick="localStorage.setItem('local','Parque Ipiranga 🌳');window.location.href='data_horario.html'">
+🌅 Ver o pôr do sol
+</button>
+
+<button onclick="localStorage.setItem('local','Parque Ipiranga 🌳');window.location.href='data_horario.html'">
+❤️ Apenas aproveitar sua companhia
+</button>
+
+</div>
+
+<script src="efeitos.js"></script>
+
+</body>
+</html>

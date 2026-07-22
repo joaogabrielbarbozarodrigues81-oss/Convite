@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Nosso Date ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    background:linear-gradient(135deg,#e6e6fa,#ff69b4);
+    font-family:Arial, sans-serif;
+}
+
+
+.heart{
+    position:fixed;
+    font-size:220px;
+    opacity:0.25;
+    animation:pulsar 2s infinite;
+}
+
+
+.centro{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+.canto1{
+    top:-50px;
+    left:-50px;
+}
+
+
+.canto2{
+    top:-50px;
+    right:-50px;
+}
+
+
+.canto3{
+    bottom:-50px;
+    left:-50px;
+}
+
+
+.canto4{
+    bottom:-50px;
+    right:-50px;
+}
+
+
+
+.container{
+
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+position:relative;
+
+}
+
+
+h1{
+color:#ff1493;
+font-size:40px;
+text-align:center;
+}
+
+
+p{
+color:#8b008b;
+font-size:22px;
+text-align:center;
+}
+
+
+button{
+
+background:#ff69b4;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:20px;
+font-size:20px;
+margin:10px;
+
+}
+
+
+
+@keyframes pulsar{
+
+50%{
+transform:scale(1.10);
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="heart centro">❤️</div>
+
+<div class="heart canto1">❤️</div>
+<div class="heart canto2">❤️</div>
+<div class="heart canto3">❤️</div>
+<div class="heart canto4">❤️</div>
+
+
+<div class="container">
+
+
+<p>Você aceitaria sair em mais um date comigo? 🥰</p>
+
+
+<button onclick="window.location.href='lugares.html'">Sim ❤️</button>
+
+<button>Não 🥺</button>
+
+</div>
+
+<script src="efeitos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Escolha a Data ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e6e6fa,#ff69b4);
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+}
+
+.heart{
+    position:fixed;
+    font-size:140px;
+    opacity:0.25;
+    animation:pulsar 2s infinite;
+}
+
+.canto1{top:-30px;left:-30px;}
+.canto2{top:-30px;right:-30px;}
+.canto3{bottom:-30px;left:-30px;}
+.canto4{bottom:-30px;right:-30px;}
+
+.container{
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    color:#ff1493;
+    font-size:34px;
+    margin-bottom:25px;
+}
+
+p{
+    color:#8b008b;
+    font-size:20px;
+}
+
+input{
+    padding:12px;
+    font-size:18px;
+    border-radius:15px;
+    border:none;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+
+button{
+    width:220px;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    background:#ff69b4;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+@keyframes pulsar{
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="heart canto1">❤️</div>
+<div class="heart canto2">❤️</div>
+<div class="heart canto3">❤️</div>
+<div class="heart canto4">❤️</div>
+
+<div class="container">
+
+<h1>📅 Escolha o dia do nosso encontro</h1>
+
+<p>Qual dia fica melhor para você?</p>
+
+<input
+type="date"
+min="2026-07-21"
+max="2026-08-31">
+
+<p>Qual horário fica melhor para você? ⏰</p>
+
+<input type="time">
+
+<br>
+
+<button onclick="enviarWhatsApp()">Enviar minha escolha ❤️</button>
+</button>
+
+</div>
+
+<script src="efeitos.js"></script>
+
+<script>
+
+function enviarWhatsApp(){
+
+let data = document.querySelector('input[type="date"]').value;
+
+let horario = document.querySelector('input[type="time"]').value;
+
+let local = localStorage.getItem('local');
+
+
+let mensagem =
+"Oi ❤️ Escolhi nosso encontro no"
++ local +
+"para o dia"
++ data +
+" às "
++ horario +
+". Estou ansiosa para esse momento 🥰";
+
+
+let numero = "62993370156";
+
+
+window.open(
+"https://wa.me/" + numero + "?text=" + encodeURIComponent ( mensagem)
+);
+
+}
+
+</script>
+
+</body>
+
+</html>

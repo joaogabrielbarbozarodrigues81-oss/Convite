@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Restaurante ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(135deg,#e6e6fa,#ff69b4);
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:#ff1493;
+    font-size:34px;
+}
+
+button{
+
+    width:220px;
+    padding:15px;
+    margin:10px;
+
+    background:#ff69b4;
+    color:white;
+
+    border:none;
+    border-radius:20px;
+
+    font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>O que você gostaria de comer? 🍽️</h1>
+
+<button onclick="localStorage.setItem('local','Restaurante 🍽️');localStorage.setItem('atividade','🍕 Pizza');window.location.href='data_horario.html'">
+🍕 Pizza
+</button>
+
+<button onclick="localStorage.setItem('local','Restaurante 🍽️');localStorage.setItem('atividade','🍔 Hambúrguer');window.location.href='data_horario.html'">
+🍔 Hambúrguer
+</button>
+
+<button onclick="localStorage.setItem('local','Restaurante 🍽️');localStorage.setItem('atividade','🍣 Sushi');window.location.href='data_horario.html'">
+🍣 Sushi
+</button>
+
+<button onclick="localStorage.setItem('local','Restaurante 🍽️');localStorage.setItem('atividade','🥩 Churrasco');window.location.href='data_horario.html'">
+🥩 Churrasco
+</button>
+
+<button onclick="localStorage.setItem('local','Restaurante 🍽️');localStorage.setItem('atividade','🍛 Almoço/Janta');window.location.href='data_horario.html'">
+🍛 Almoço/Janta
+</button>
+
+</div>
+
+<script src="efeitos.js"></script>
+
+</body>
+
+</html>

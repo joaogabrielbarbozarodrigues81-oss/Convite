@@ -1,0 +1,137 @@
+/* ==========================
+   EFEITOS GERAIS DO CONVITE ❤️
+========================== */
+
+
+/* Transição suave entre páginas */
+
+body{
+    animation: aparecer 0.8s ease;
+}
+
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* ==========================
+   BOTÕES COM ANIMAÇÃO ✨
+========================== */
+
+
+button{
+
+    transition:0.3s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+button:active{
+
+    transform:scale(0.92);
+
+}
+
+
+
+/* ==========================
+   CORAÇÕES SUBINDO ❤️
+========================== */
+
+
+.coracao-subindo{
+
+    position:fixed;
+    bottom:-50px;
+    font-size:35px;
+    animation:subir 5s linear infinite;
+    pointer-events:none;
+
+}
+
+
+
+@keyframes subir{
+
+    0%{
+
+        transform:translateY(0);
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        transform:translateY(-110vh);
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ==========================
+   BOMBA CORAÇÃO 💥❤️
+========================== */
+
+
+.bomba-coracao{
+
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:80px;
+    animation:pulsar-coracao 1s infinite;
+    z-index:999;
+
+}
+
+
+
+@keyframes pulsar-coracao{
+
+
+    0%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.3);
+
+    }
+
+
+    100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+    }
+
+
+}
